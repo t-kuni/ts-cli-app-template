@@ -1,0 +1,50 @@
+{
+  "name": "chrome-extension-skeleton",
+  "version": "1.0.0",
+  "description": "This repository is skeleton of chrome extension.",
+  "watch": {
+    "manifest": "manifest.template.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack.config.js --mode development",
+    "webpack:prod": "webpack --config webpack.config.js --mode production",
+    "webpack:watch": "webpack --config webpack.config.js --mode development --watch",
+    "dev": "npm-run-all webpack manifest",
+    "watch": "npm-run-all webpack:watch manifest:watch",
+    "release": "run-s webpack:prod manifest zip",
+    "manifest": "node manifest.template.js dev",
+    "manifest:watch": "npm-watch",
+    "zip": "node zip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-kuni/chrome-extension-skeleton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-kuni/chrome-extension-skeleton/issues"
+  },
+  "homepage": "https://github.com/t-kuni/chrome-extension-skeleton#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cache-loader": "^4.1.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "fork-ts-checker-webpack-plugin": "^3.1.0",
+    "inject-loader": "^4.0.1",
+    "mocha": "^6.2.2",
+    "mochapack": "^1.1.11",
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.6.0",
+    "reflect-metadata": "^0.1.13",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "thread-loader": "^2.1.3",
+    "ts-loader": "^6.2.1",
+    "tsyringe": "^4.0.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
