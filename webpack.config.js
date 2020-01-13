@@ -1,6 +1,10 @@
 
 module.exports = env => {
     return {
+        target : 'node',
+        node   : {
+            __dirname: true,
+        },
         entry  : {
             app: './src/app.ts',
         },

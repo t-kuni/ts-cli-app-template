@@ -1,6 +1,10 @@
 
 module.exports = {
     mode: "development",
+    target: 'node',
+    node: {
+        __dirname: true,
+    },
     devtool: "inline-source-map",
     module: {
         rules: [

@@ -7,15 +7,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config webpack.config.js --mode development",
-    "webpack:prod": "webpack --config webpack.config.js --mode production",
-    "webpack:watch": "webpack --config webpack.config.js --mode development --watch",
-    "dev": "npm-run-all webpack manifest",
-    "watch": "npm-run-all webpack:watch manifest:watch",
-    "release": "run-s webpack:prod manifest zip",
-    "manifest": "node manifest.template.js dev",
-    "manifest:watch": "npm-watch",
-    "zip": "node zip.js"
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -31,6 +23,7 @@
   "devDependencies": {
     "cache-loader": "^4.1.0",
     "copy-webpack-plugin": "^5.0.5",
+    "dotenv": "^8.2.0",
     "fork-ts-checker-webpack-plugin": "^3.1.0",
     "inject-loader": "^4.0.1",
     "mocha": "^6.2.2",
