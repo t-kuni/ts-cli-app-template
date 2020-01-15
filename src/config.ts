@@ -1,8 +1,6 @@
-const APP_TYPE = 'chrome_extension';
-const APP_NAME = 'github_fast_traveler';
+const APP_NAME = 'ts-cli-app-skeleton';
 
 export const CONFIG = {
-    APP_TYPE,
     APP_NAME
 };
 

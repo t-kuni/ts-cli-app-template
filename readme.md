@@ -13,11 +13,11 @@ rm -rf .git
 # Build
 
 ```
-docker build --tag twitter-automator .
+docker build --tag example-container .
 ```
 
 # Run
 
 ```
-docker run -e AWS_ACCESS_KEY_ID=xxx -e AWS_SECRET_ACCESS_KEY=xxx -e SLACK_TOKEN=xxx twitter-automator [name]
+docker run example-container example
 ```
