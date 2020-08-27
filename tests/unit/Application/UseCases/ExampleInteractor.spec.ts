@@ -1,7 +1,6 @@
 import "../../../../src/bootstrap";
 import {container} from "tsyringe";
 import {ExampleInteractor} from "../../../../src/Application/UseCases/ExampleInteractor";
-import {describe, it} from "mocha";
 
 const assert = require('assert');
 
