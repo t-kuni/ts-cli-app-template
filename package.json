@@ -1,10 +1,7 @@
 {
   "name": "ts-cli-app-skeleton",
   "version": "1.0.0",
-  "description": "This repository is skeleton of chrome extension.",
-  "watch": {
-    "manifest": "manifest.template.js"
-  },
+  "description": "Project skeleton for TypeScript CLI application.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.config.js",
@@ -24,19 +21,13 @@
   "devDependencies": {
     "@types/mocha": "^9.0.0",
     "cache-loader": "^4.1.0",
-    "copy-webpack-plugin": "^9.0.1",
     "dotenv": "^10.0.0",
     "fork-ts-checker-webpack-plugin": "^6.2.12",
-    "inject-loader": "^4.0.1",
     "mocha": "^9.0.2",
     "mochapack": "^2.1.2",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.33",
-    "npm-run-all": "^4.1.5",
-    "npm-watch": "^0.10.0",
     "reflect-metadata": "^0.1.13",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1",
     "thread-loader": "^3.0.4",
     "ts-loader": "^9.2.3",
     "tsyringe": "^4.6.0",
