@@ -25,9 +25,11 @@ npm run watch
 node dist/example.js
 ```
 
-# UnitTest settings in PhpStorm
+# Run tests
 
-![](https://i.gyazo.com/45c359a605701d9e848710a43e8c7f5d.png) 
+```
+npm run test
+```
 
 # Build container
 

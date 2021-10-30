@@ -8,6 +8,8 @@ export class ArgumentProvider implements IArgumentProvider {
     constructor() {
         this.args = parse<IArguments>({
             message: {type: String, alias: 'm', optional: true, defaultValue: ""},
+        }, {
+            stopAtFirstUnknown: true
         });
     }
 
