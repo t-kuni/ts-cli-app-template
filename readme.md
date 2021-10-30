@@ -15,6 +15,8 @@ npm install
 
 ```
 npm run build
+# or
+npm run watch
 ```
 
 # Run application
@@ -38,3 +40,6 @@ docker build --tag example-container .
 ```
 docker run example-container example
 ```
+
+# Update all packages
+
