@@ -45,3 +45,9 @@ docker run example-container example
 
 # Update all packages
 
+```
+npm install -g npm-check-updates
+ncu -u
+npm install
+npm run test
+```
