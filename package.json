@@ -25,7 +25,7 @@
     "fork-ts-checker-webpack-plugin": "^6.4.0",
     "jest": "^27.3.1",
     "jest-ts-auto-mock": "^2.0.0",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.33",
     "reflect-metadata": "^0.1.13",
     "thread-loader": "^3.0.4",
