@@ -1,7 +1,7 @@
-import "../../../../src/bootstrap";
+import "../../bootstrap";
 import {container} from "tsyringe";
-import {ExampleInteractor} from "../../../../src/Application/UseCases/ExampleInteractor";
-import {IStdOut} from "../../../../src/Infrastructure/System/interfaces/IStdOut";
+import {ExampleInteractor} from "./ExampleInteractor";
+import {IStdOut} from "../../Infrastructure/System/interfaces/IStdOut";
 import {createMock} from 'ts-auto-mock';
 
 const assert = require('assert');
