@@ -1,5 +1,5 @@
-import {IArguments} from "./IArguments";
+import {Arguments} from "../../../Domain/Models/Arguments";
 
 export interface IArgumentProvider {
-    getArgs(): IArguments;
+    getArgs(): Arguments;
 }

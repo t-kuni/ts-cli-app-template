@@ -1,19 +1,20 @@
 import {parse} from 'ts-command-line-args';
 import {IArgumentProvider} from "./interfaces/IArgumentProvider";
-import {IArguments} from "./interfaces/IArguments";
+import {Arguments} from "../../Domain/Models/Arguments";
 
 export class ArgumentProvider implements IArgumentProvider {
-    private args: IArguments;
+    private args: Arguments;
 
     constructor() {
-        this.args = parse<IArguments>({
+        this.args = parse<Arguments>({
             message: {type: String, alias: 'm', optional: true, defaultValue: ""},
+            config: {type: String, alias: 'c', optional: true, defaultValue: "./config.yml"},
         }, {
             stopAtFirstUnknown: true
         });
     }
 
-    getArgs(): IArguments {
+    getArgs(): Arguments {
         return this.args;
     }
 }

@@ -11,7 +11,7 @@ const config: Config.InitialOptions = {
         }
     },
     setupFiles: [
-        "<rootDir>config.ts",
+        "<rootDir>jest.setup.ts",
     ],
 };
 export default config;

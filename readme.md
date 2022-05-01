@@ -53,5 +53,5 @@ npm install
 # Check
 npm run test
 npm run build
-node dist/example.js --message=Test
+node dist/example.js --message="Test Message" --config=config.example.yml
 ```
