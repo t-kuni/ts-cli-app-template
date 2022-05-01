@@ -1,6 +1,5 @@
 import {inject, injectable} from "tsyringe";
-import {StdOut} from "../../Infrastructure/System/StdOut";
-import {ITextReader} from "../../Infrastructure/System/interfaces/ITextReader";
+import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 import Config from "../../Domain/Models/Config";
 import {parse} from "yaml";
 

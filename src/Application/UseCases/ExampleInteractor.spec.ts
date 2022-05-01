@@ -1,9 +1,9 @@
 import "../../bootstrap";
 import {container} from "tsyringe";
 import {ExampleInteractor} from "./ExampleInteractor";
-import {IStdOut} from "../../Infrastructure/System/interfaces/IStdOut";
+import {IStdOut} from "../../Domain/Infrastructure/System/IStdOut";
 import {createMock} from 'ts-auto-mock';
-import {ITextReader} from "../../Infrastructure/System/interfaces/ITextReader";
+import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 
 const assert = require('assert');
 

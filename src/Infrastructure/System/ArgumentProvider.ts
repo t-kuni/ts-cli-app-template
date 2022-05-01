@@ -1,5 +1,5 @@
 import {parse} from 'ts-command-line-args';
-import {IArgumentProvider} from "./interfaces/IArgumentProvider";
+import {IArgumentProvider} from "../../Domain/Infrastructure/System/IArgumentProvider";
 import {Arguments} from "../../Domain/Models/Arguments";
 
 export class ArgumentProvider implements IArgumentProvider {

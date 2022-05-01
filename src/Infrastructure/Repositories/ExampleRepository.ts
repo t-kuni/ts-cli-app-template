@@ -1,5 +1,5 @@
 import ExampleItem from "../../Domain/ValueObjects/ExampleItem";
-import {IExampleRepository} from "./interfaces/IExampleRepository";
+import {IExampleRepository} from "../../Domain/Infrastructure/Repositories/IExampleRepository";
 
 export class ExampleRepository implements IExampleRepository {
 

@@ -1,4 +1,4 @@
-import {IStdOut} from "./interfaces/IStdOut";
+import {IStdOut} from "../../Domain/Infrastructure/System/IStdOut";
 
 export class StdOut implements IStdOut {
     println(msg: string) {

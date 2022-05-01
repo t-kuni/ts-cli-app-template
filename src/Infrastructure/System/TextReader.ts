@@ -1,4 +1,4 @@
-import {ITextReader} from "./interfaces/ITextReader";
+import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 import * as fs from 'fs'
 
 export class TextReader implements ITextReader {
