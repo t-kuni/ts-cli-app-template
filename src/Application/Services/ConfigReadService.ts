@@ -1,4 +1,5 @@
 import {inject, injectable} from "tsyringe";
+import {DI} from "../../diTokens";
 import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 import Config from "../../Domain/Models/Config";
 import {parse} from "yaml";
@@ -8,7 +9,7 @@ export class ConfigReadService {
     private textReader: ITextReader;
 
     constructor(
-        @inject('ITextReader') textReader: ITextReader,
+        @inject(DI.Domain.Infrastructure.System.ITextReader) textReader: ITextReader,
     ) {
         this.textReader = textReader;
     }

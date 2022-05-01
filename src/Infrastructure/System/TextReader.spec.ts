@@ -1,7 +1,7 @@
 import "../../bootstrap";
 import {container} from "tsyringe";
 import {TextReader} from "./TextReader";
-
+import {DI} from "../../diTokens";
 
 describe('TextReader#read', () => {
     it.skip('read', async () => {
@@ -12,7 +12,7 @@ describe('TextReader#read', () => {
         /*
          * Run
          */
-        const testee = container.resolve<TextReader>('ITextReader');
+        const testee = container.resolve<TextReader>(DI.Domain.Infrastructure.System.ITextReader);
         const config = testee.read('./config.yml');
 
         /*

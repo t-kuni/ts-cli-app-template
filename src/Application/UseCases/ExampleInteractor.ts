@@ -3,6 +3,7 @@ import {ExampleService} from "../Services/ExampleService";
 import {ArgumentProvider} from "../../Infrastructure/System/ArgumentProvider";
 import {StdOut} from "../../Infrastructure/System/StdOut";
 import {ConfigReadService} from "../Services/ConfigReadService";
+import {DI} from "../../diTokens";
 
 @injectable()
 export class ExampleInteractor {
@@ -12,10 +13,10 @@ export class ExampleInteractor {
     private argumentProvider: ArgumentProvider;
 
     constructor(
-        @inject('ExampleService') service: ExampleService,
-        @inject('IStdOut') stdOut: StdOut,
-        @inject('IArgumentProvider') argumentProvider: ArgumentProvider,
-        @inject('ConfigReadService') configReader: ConfigReadService,
+        @inject(DI.Application.Services.ExampleService) service: ExampleService,
+        @inject(DI.Domain.Infrastructure.System.IStdOut) stdOut: StdOut,
+        @inject(DI.Domain.Infrastructure.System.IArgumentProvider) argumentProvider: ArgumentProvider,
+        @inject(DI.Application.Services.ConfigReadService) configReader: ConfigReadService,
     ) {
         this.configReader = configReader;
         this.stdOut = stdOut;

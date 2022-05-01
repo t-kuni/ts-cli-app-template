@@ -4,6 +4,7 @@ import {ExampleInteractor} from "./ExampleInteractor";
 import {IStdOut} from "../../Domain/Infrastructure/System/IStdOut";
 import {createMock} from 'ts-auto-mock';
 import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
+import {DI} from "../../diTokens";
 
 const assert = require('assert');
 
@@ -24,7 +25,7 @@ describe('ExampleInteractor#exec', () => {
                     expect(fn.mock.calls[2][0]).toBe("message: (message option didn't specified)");
                 })
             }
-            container.register("IStdOut", {useValue: mock});
+            container.register(DI.Domain.Infrastructure.System.IStdOut, {useValue: mock});
         }
         {
             const mock = createMock<ITextReader>();
@@ -35,13 +36,13 @@ describe('ExampleInteractor#exec', () => {
                     expect(fn.mock.calls.length).toBe(1);
                 })
             }
-            container.register("ITextReader", {useValue: mock});
+            container.register(DI.Domain.Infrastructure.System.ITextReader, {useValue: mock});
         }
 
         /*
          * Run
          */
-        const interactor = container.resolve<ExampleInteractor>('ExampleInteractor');
+        const interactor = container.resolve<ExampleInteractor>(DI.Application.UseCases.ExampleInteractor);
         interactor.exec();
 
         /*
