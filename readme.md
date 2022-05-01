@@ -49,5 +49,9 @@ docker run example-container example
 npm install -g npm-check-updates
 ncu -u
 npm install
+
+# Check
 npm run test
+npm run build
+node dist/example.js --message=Test
 ```
