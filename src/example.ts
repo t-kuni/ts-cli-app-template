@@ -11,6 +11,6 @@ import {DI} from "./diTokens";
         //
         // Do any error handling.
         //
-        throw e;
+        console.error(e);
     }
 })();

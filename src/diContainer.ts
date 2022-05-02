@@ -9,8 +9,6 @@ import {TextReader} from "./Infrastructure/System/TextReader";
 import {ConfigReadService} from "./Application/Services/ConfigReadService";
 import {DI} from "./diTokens";
 
-console.log("container initialize")
-
 // Application / UseCases
 container.register(DI.Application.UseCases.ExampleInteractor, {useClass: ExampleInteractor});
 
