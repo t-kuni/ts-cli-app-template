@@ -16,7 +16,6 @@ export const DI = {
                 IExampleRepository: uuidv4(),
             },
             System: {
-                IArgumentProvider: uuidv4(),
                 IStdOut: uuidv4(),
                 ITextReader: uuidv4(),
             }
