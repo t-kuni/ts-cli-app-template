@@ -3,11 +3,11 @@ import {v4 as uuidv4} from 'uuid';
 export const DI = {
     Application: {
         Services: {
-            ExampleService: uuidv4(),
-            ConfigReadService: uuidv4(),
+            IExampleService: uuidv4(),
+            IConfigReadService: uuidv4(),
         },
         UseCases: {
-            ExampleInteractor: uuidv4(),
+            MainInteractor: uuidv4(),
         }
     },
     Domain: {

@@ -3,9 +3,10 @@ import {DI} from "../../diTokens";
 import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 import Config from "../../Domain/Models/Config";
 import {parse} from "yaml";
+import {IConfigReadService} from "./IConfigReadService";
 
 @injectable()
-export class ConfigReadService {
+export class ConfigReadService implements IConfigReadService {
     private textReader: ITextReader;
 
     constructor(
@@ -14,7 +15,7 @@ export class ConfigReadService {
         this.textReader = textReader;
     }
 
-    read(path: string): Config|null {
+    read(path: string): Config | null {
         let configYaml;
         try {
             configYaml = this.textReader.read(path)
