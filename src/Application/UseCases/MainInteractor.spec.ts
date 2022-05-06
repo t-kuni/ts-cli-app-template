@@ -1,6 +1,6 @@
 import "../../bootstrap";
 import {container} from "tsyringe";
-import {MainInteractor} from "./MainInteractor";
+import {MainInteractor, MainInteractorInput} from "./MainInteractor";
 import {IStdOut} from "../../Domain/Infrastructure/System/IStdOut";
 import {createMock} from 'ts-auto-mock';
 import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
@@ -43,8 +43,12 @@ describe('MainInteractor', () => {
             /*
              * Run
              */
+            const input: MainInteractorInput = {
+                message: "",
+                config: "",
+            }
             const interactor = container.resolve<MainInteractor>(DI.Application.UseCases.MainInteractor);
-            interactor.exec();
+            interactor.exec(input);
 
             /*
              * Assert
