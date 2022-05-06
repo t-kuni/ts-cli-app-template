@@ -31,6 +31,12 @@ node dist/main.js
 npm run test
 ```
 
+# Run lint
+
+```
+npm run 
+```
+
 # Build container
 
 ```

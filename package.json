@@ -4,6 +4,7 @@
   "description": "Project skeleton for TypeScript CLI application.",
   "scripts": {
     "test": "jest",
+    "lint": "eslint .",
     "watch": "webpack --watch --config webpack.config.js",
     "build": "webpack --config webpack.config.js --mode production"
   },
