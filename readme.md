@@ -22,7 +22,7 @@ npm run watch
 # Run application
 
 ```
-node dist/main.js
+dist/main.js
 ```
 
 # Run tests
@@ -66,5 +66,5 @@ npm install
 # Check
 npm run test
 npm run build
-node dist/main.js --message="Test Message" --config=config.example.yml
+dist/main.js cmd1 --message="Test Message" --config=config.example.yml
 ```
