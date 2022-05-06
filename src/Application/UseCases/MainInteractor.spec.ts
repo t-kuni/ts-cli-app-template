@@ -5,8 +5,7 @@ import {IStdOut} from "../../Domain/Infrastructure/System/IStdOut";
 import {createMock} from 'ts-auto-mock';
 import {ITextReader} from "../../Domain/Infrastructure/System/ITextReader";
 import {DI} from "../../diTokens";
-
-const assert = require('assert');
+import assert = require('assert');
 
 describe('MainInteractor', () => {
     describe('exec', () => {
@@ -18,7 +17,7 @@ describe('MainInteractor', () => {
             {
                 const mock = createMock<IStdOut>();
                 {
-                    const fn = mock.println = jest.fn((msg: string) => null)
+                    const fn = mock.println = jest.fn()
                     mockAsserts.push(() => {
                         expect(fn.mock.calls.length).toBe(3);
                         expect(fn.mock.calls[0][0]).toBe("Hello from ExampleService.");
@@ -31,8 +30,9 @@ describe('MainInteractor', () => {
             {
                 const mock = createMock<ITextReader>();
                 {
+                    const fn = mock.read = jest.fn()
                     const mockConfigYaml = "name: test\nemail: test@test.test"
-                    const fn = mock.read = jest.fn((path: string) => mockConfigYaml)
+                    fn.mockReturnValue(mockConfigYaml)
                     mockAsserts.push(() => {
                         expect(fn.mock.calls.length).toBe(1);
                     })

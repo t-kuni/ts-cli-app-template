@@ -4,7 +4,7 @@ export default command({
     name: 'cmd2',
     args: {
     },
-    handler: (args) => {
+    handler: () => {
         console.log("command cmd2");
     },
 });
