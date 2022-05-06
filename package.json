@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
     "watch": "webpack --watch --config webpack.config.js",
     "build": "webpack --config webpack.config.js --mode production"
   },

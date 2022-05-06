@@ -34,7 +34,10 @@ npm run test
 # Run lint
 
 ```
-npm run 
+npm run lint
+
+# With fix
+npm run lint-fix
 ```
 
 # Build container
