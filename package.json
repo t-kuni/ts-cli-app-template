@@ -24,7 +24,7 @@
     "jest-mock-promise": "^2.0.2",
     "jest-ts-auto-mock": "^2.1.0",
     "moment": "^2.29.3",
-    "moment-timezone": "^0.5.34",
+    "moment-timezone": "^0.5.35",
     "reflect-metadata": "^0.1.13",
     "thread-loader": "^3.0.4",
     "ts-auto-mock": "^3.6.0",
