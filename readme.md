@@ -6,6 +6,7 @@ Project template for TypeScript CLI application.
 
 ```
 npm install
+cp src/.env.example src/.env
 ```
 
 # Build application

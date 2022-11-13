@@ -27,6 +27,13 @@ export class MainInteractor {
 
         this.stdOut.println(`Hello! ${config.name}<${config.email}>`)
 
+        const env: string = process.env.ENV;
+        if (env != "") {
+            this.stdOut.println(`ENV: ${env}`)
+        } else {
+            this.stdOut.println(`ENV: (undefined)`)
+        }
+
         const msg = input.message
         if (msg.length > 0) {
             this.stdOut.println('message: ' + msg)

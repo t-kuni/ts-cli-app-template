@@ -13,16 +13,19 @@ describe('MainInteractor', () => {
             /*
              * Prepare
              */
+            process.env.ENV = 'test';
+
             const mockAsserts = [];
             {
                 const mock = createMock<IStdOut>();
                 {
                     const fn = mock.println = jest.fn()
                     mockAsserts.push(() => {
-                        expect(fn.mock.calls.length).toBe(3);
+                        expect(fn.mock.calls.length).toBe(4);
                         expect(fn.mock.calls[0][0]).toBe("Hello from ExampleService.");
                         expect(fn.mock.calls[1][0]).toBe("Hello! test<test@test.test>");
-                        expect(fn.mock.calls[2][0]).toBe("message: (message option didn't specified)");
+                        expect(fn.mock.calls[2][0]).toBe("ENV: test");
+                        expect(fn.mock.calls[3][0]).toBe("message: (message option didn't specified)");
                     })
                 }
                 container.register(DI.Domain.Infrastructure.System.IStdOut, {useValue: mock});
