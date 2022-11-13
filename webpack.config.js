@@ -2,6 +2,7 @@ const ShebangPlugin = require('webpack-shebang-plugin');
 
 module.exports = {
     target : 'node',
+    mode: "development",
     node   : {
         __dirname: true,
     },
