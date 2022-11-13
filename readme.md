@@ -55,13 +55,4 @@ docker run example-container main.js cmd1
 
 # Update all packages
 
-```
-npm install -g npm-check-updates
-npx npm-check-updates -u
-npm install
-
-# Check
-npm run test
-npm run build
-dist/main.js cmd1 --message="Test Message" --config=config.example.yml
-```
+[Document](https://gist.github.com/t-kuni/e59677cbe6b0ac0046a5615bbf4ec043)
