@@ -1,6 +1,6 @@
 # About
 
-Project skeleton for TypeScript CLI application.
+Project template for TypeScript CLI application.
 
 # Usage
 
@@ -57,7 +57,7 @@ docker run example-container main.js cmd1
 
 ```
 npm install -g npm-check-updates
-ncu -u
+npx npm-check-updates -u
 npm install
 
 # Check
