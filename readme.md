@@ -20,6 +20,7 @@ npm run watch
 # Run application
 
 ```
+export ENV=local
 dist/main.js cmd1
 ```
 
