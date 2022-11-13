@@ -18,6 +18,7 @@ export const DI = {
             System: {
                 IStdOut: uuidv4(),
                 ITextReader: uuidv4(),
+                ITimer: uuidv4(),
             }
         }
     },

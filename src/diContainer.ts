@@ -7,6 +7,7 @@ import {StdOut} from "./Infrastructure/System/StdOut";
 import {TextReader} from "./Infrastructure/System/TextReader";
 import {ConfigReadService} from "./Application/Services/ConfigReadService";
 import {DI} from "./diTokens";
+import {Timer} from "./Infrastructure/System/Timer";
 
 // Application / UseCases
 container.register(DI.Application.UseCases.MainInteractor, {useClass: MainInteractor});
@@ -21,3 +22,4 @@ container.register(DI.Domain.Infrastructure.Repositories.IExampleRepository, {us
 // Domain / Infrastructure / System
 container.register(DI.Domain.Infrastructure.System.IStdOut, {useClass: StdOut});
 container.register(DI.Domain.Infrastructure.System.ITextReader, {useClass: TextReader});
+container.register(DI.Domain.Infrastructure.System.ITimer, {useClass: Timer});
