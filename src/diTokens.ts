@@ -20,6 +20,7 @@ export const DI = {
                 ITextReader: uuidv4(),
                 ITimer: uuidv4(),
                 ILogger: uuidv4(),
+                IWaiter: uuidv4(),
             }
         }
     },
