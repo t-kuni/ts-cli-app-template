@@ -1,17 +1,7 @@
-import type {Config} from '@jest/types';
-
-const config: Config.InitialOptions = {
-    verbose: true,
+/** @type {import('ts-jest').JestConfigWithTsJest} **/
+module.exports = {
+    testEnvironment: "node",
     transform: {
-        ".(ts|tsx)": "ts-jest"
+        "^.+.tsx?$": ["ts-jest",{}],
     },
-    globals: {
-        "ts-jest": {
-            "compiler": "ttypescript"
-        }
-    },
-    setupFiles: [
-        "<rootDir>jest.setup.ts",
-    ],
 };
-export default config;

@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "sourceMap": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": ".",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "plugins": [
-      {
-        "transform": "ts-auto-mock/transformer",
-        "cacheBetweenTests": false
-      }
-    ]
+    "emitDecoratorMetadata": true
   }
 }

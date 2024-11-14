@@ -2,6 +2,11 @@
 
 Project template for TypeScript CLI application.
 
+# Feature
+
+* Onion Architecture
+* DI Container
+
 # Usage
 
 ```
@@ -21,7 +26,7 @@ npm run watch
 
 ```
 export ENV=local
-dist/main.js cmd1
+node dist/src/main.js cmd1
 ```
 
 # Run tests
