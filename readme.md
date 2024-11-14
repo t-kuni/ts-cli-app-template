@@ -2,10 +2,18 @@
 
 Project template for TypeScript CLI application.
 
-# Feature
+# Features
 
-* Onion Architecture
-* DI Container
+| Feature               | Library                                    |
+|-----------------------|--------------------------------------------|
+| Onion Architecture    | -                                          |
+| Dependency Injection  | [tsyringe](https://github.com/microsoft/tsyringe)                                   |
+| Command Line Interface | [cmd-ts](https://github.com/Schniz/cmd-ts) |
+| Configuration         | [dotenv](https://github.com/motdotla/dotenv) |
+| Logging               | [winston](https://github.com/winstonjs/winston) |
+| Testing               | [jest](https://github.com/jestjs/jest) |
+| Date Time Manipulation| [luxon](https://github.com/moment/luxon) |
+
 
 # Usage
 
